@@ -14,7 +14,7 @@ resolver = {
 }
 
 map '/playground' do
-  use GraphQLPlayground
+  use GraphQLPlayground, endpoint: '/'
 end
 
-run GraphqlServer.new(type_def: type_def, resolver: resolver)
+run GraphQLServer.new(type_def: type_def, resolver: resolver)
