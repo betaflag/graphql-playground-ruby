@@ -1,9 +1,10 @@
 # frozen_string_literal: true
+require 'erb'
 
 class GraphQLPlayground
   CDN_URL = '//cdn.jsdelivr.net/npm'
 
-  # Initialize the middleware 
+  # Initialize the middleware
   #
   # @param string cdn_url The CDN url for graphql playground (defaults to the official release)
   # @param string version The version of the graphql playground to use (defaults to latest)
